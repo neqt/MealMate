@@ -1,0 +1,62 @@
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\web application dev\MealMate\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\web application dev\MealMate\bin\Debug\net7.0\appsettings.json
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\web application dev\MealMate\bin\Debug\net7.0\MealMate.staticwebassets.runtime.json
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\web application dev\MealMate\bin\Debug\net7.0\MealMate.exe
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\web application dev\MealMate\bin\Debug\net7.0\MealMate.deps.json
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\web application dev\MealMate\bin\Debug\net7.0\MealMate.runtimeconfig.json
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\web application dev\MealMate\bin\Debug\net7.0\MealMate.dll
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\web application dev\MealMate\bin\Debug\net7.0\MealMate.pdb
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\web application dev\MealMate\obj\Debug\net7.0\MealMate.csproj.AssemblyReference.cache
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\web application dev\MealMate\obj\Debug\net7.0\MealMate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\web application dev\MealMate\obj\Debug\net7.0\MealMate.AssemblyInfoInputs.cache
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\web application dev\MealMate\obj\Debug\net7.0\MealMate.AssemblyInfo.cs
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\web application dev\MealMate\obj\Debug\net7.0\MealMate.csproj.CoreCompileInputs.cache
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\web application dev\MealMate\obj\Debug\net7.0\MealMate.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\web application dev\MealMate\obj\Debug\net7.0\MealMate.RazorAssemblyInfo.cache
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\web application dev\MealMate\obj\Debug\net7.0\MealMate.RazorAssemblyInfo.cs
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\web application dev\MealMate\obj\Debug\net7.0\staticwebassets\msbuild.MealMate.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\web application dev\MealMate\obj\Debug\net7.0\staticwebassets\msbuild.build.MealMate.props
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\web application dev\MealMate\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.MealMate.props
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\web application dev\MealMate\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.MealMate.props
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\web application dev\MealMate\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\web application dev\MealMate\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\web application dev\MealMate\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\web application dev\MealMate\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\web application dev\MealMate\obj\Debug\net7.0\scopedcss\bundle\MealMate.styles.css
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\web application dev\MealMate\obj\Debug\net7.0\scopedcss\projectbundle\MealMate.bundle.scp.css
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\web application dev\MealMate\obj\Debug\net7.0\MealMate.dll
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\web application dev\MealMate\obj\Debug\net7.0\refint\MealMate.dll
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\web application dev\MealMate\obj\Debug\net7.0\MealMate.pdb
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\web application dev\MealMate\obj\Debug\net7.0\MealMate.genruntimeconfig.cache
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\web application dev\MealMate\obj\Debug\net7.0\ref\MealMate.dll
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\MealMate\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\MealMate\bin\Debug\net7.0\appsettings.json
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\MealMate\bin\Debug\net7.0\MealMate.staticwebassets.runtime.json
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\MealMate\bin\Debug\net7.0\MealMate.exe
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\MealMate\bin\Debug\net7.0\MealMate.deps.json
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\MealMate\bin\Debug\net7.0\MealMate.runtimeconfig.json
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\MealMate\bin\Debug\net7.0\MealMate.dll
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\MealMate\bin\Debug\net7.0\MealMate.pdb
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\MealMate\obj\Debug\net7.0\MealMate.csproj.AssemblyReference.cache
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\MealMate\obj\Debug\net7.0\MealMate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\MealMate\obj\Debug\net7.0\MealMate.AssemblyInfoInputs.cache
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\MealMate\obj\Debug\net7.0\MealMate.AssemblyInfo.cs
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\MealMate\obj\Debug\net7.0\MealMate.csproj.CoreCompileInputs.cache
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\MealMate\obj\Debug\net7.0\MealMate.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\MealMate\obj\Debug\net7.0\MealMate.RazorAssemblyInfo.cache
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\MealMate\obj\Debug\net7.0\MealMate.RazorAssemblyInfo.cs
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\MealMate\obj\Debug\net7.0\staticwebassets\msbuild.MealMate.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\MealMate\obj\Debug\net7.0\staticwebassets\msbuild.build.MealMate.props
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\MealMate\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.MealMate.props
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\MealMate\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.MealMate.props
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\MealMate\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\MealMate\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\MealMate\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\MealMate\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\MealMate\obj\Debug\net7.0\scopedcss\bundle\MealMate.styles.css
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\MealMate\obj\Debug\net7.0\scopedcss\projectbundle\MealMate.bundle.scp.css
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\MealMate\obj\Debug\net7.0\MealMate.dll
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\MealMate\obj\Debug\net7.0\refint\MealMate.dll
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\MealMate\obj\Debug\net7.0\MealMate.pdb
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\MealMate\obj\Debug\net7.0\MealMate.genruntimeconfig.cache
+C:\Users\supit\OneDrive\Desktop\ce_kmitl\2022-2\MealMate\obj\Debug\net7.0\ref\MealMate.dll
