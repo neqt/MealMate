@@ -14,7 +14,7 @@
         "outputPath": "c:\\Users\\supit\\OneDrive\\Desktop\\ce_kmitl\\2022-2\\MealMate\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\supit\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\test\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"

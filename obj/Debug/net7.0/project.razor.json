@@ -1,6 +1,6 @@
 {
-  "SerializedFilePath": "c:\\Users\\supit\\OneDrive\\Desktop\\ce_kmitl\\2022-2\\MealMate\\obj\\Debug\\net7.0\\project.razor.json",
-  "FilePath": "c:\\Users\\supit\\OneDrive\\Desktop\\ce_kmitl\\2022-2\\MealMate\\MealMate.csproj",
+  "SerializedFilePath": "c:\\Users\\test\\Desktop\\mm\\MealMate\\obj\\Debug\\net7.0\\project.razor.json",
+  "FilePath": "c:\\Users\\test\\Desktop\\mm\\MealMate\\MealMate.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "7.0",
@@ -18645,7 +18645,7 @@
   "RootNamespace": "MealMate",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\supit\\OneDrive\\Desktop\\ce_kmitl\\2022-2\\MealMate\\Views\\Shared\\Error.cshtml",
+      "FilePath": "c:\\Users\\test\\Desktop\\mm\\MealMate\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
@@ -18665,7 +18665,7 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\supit\\OneDrive\\Desktop\\ce_kmitl\\2022-2\\MealMate\\Views\\Home\\Privacy.cshtml",
+      "FilePath": "c:\\Users\\test\\Desktop\\mm\\MealMate\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     },
