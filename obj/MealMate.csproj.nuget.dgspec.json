@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\supit\\OneDrive\\Desktop\\ce_kmitl\\2022-2\\MealMate\\MealMate.csproj": {}
+    "C:\\Users\\test\\Desktop\\mm\\MealMate\\MealMate.csproj": {}
   },
   "projects": {
-    "c:\\Users\\supit\\OneDrive\\Desktop\\ce_kmitl\\2022-2\\MealMate\\MealMate.csproj": {
+    "C:\\Users\\test\\Desktop\\mm\\MealMate\\MealMate.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\supit\\OneDrive\\Desktop\\ce_kmitl\\2022-2\\MealMate\\MealMate.csproj",
+        "projectUniqueName": "C:\\Users\\test\\Desktop\\mm\\MealMate\\MealMate.csproj",
         "projectName": "MealMate",
-        "projectPath": "c:\\Users\\supit\\OneDrive\\Desktop\\ce_kmitl\\2022-2\\MealMate\\MealMate.csproj",
-        "packagesPath": "C:\\Users\\supit\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\supit\\OneDrive\\Desktop\\ce_kmitl\\2022-2\\MealMate\\obj\\",
+        "projectPath": "C:\\Users\\test\\Desktop\\mm\\MealMate\\MealMate.csproj",
+        "packagesPath": "C:\\Users\\test\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\test\\Desktop\\mm\\MealMate\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\test\\AppData\\Roaming\\NuGet\\NuGet.Config"
