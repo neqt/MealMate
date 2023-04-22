@@ -22,7 +22,8 @@ public class HomeController : Controller
     {
         return View();
     }
-
+    public ActionResult Signup()
+    {     return View("Signup"); }
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

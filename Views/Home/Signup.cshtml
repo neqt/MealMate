@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+   
+  <link rel="stylesheet" href="style.css">
+   <!-- Font Awesome Cdn Link -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  
+   <div class="image-container">
+      <h2>Create Account</h2>
+    </div>
+  <div class="wrapper-signup">
+    <form>
+        <label>USERNAME</label>
+        <input type="email" placeholder="" />
+        <label>PASSWORD</label>
+        <input type="password" placeholder="" />
+        <label>TEL NUMBER</label>
+        <input type="tel number" placeholder="" />
+
+    <closeform></closeform></form>
+    <button>Create Account</button>
+    
+    <div class="not-member">
+      aready have an account @Html.ActionLink("Signup", "Index", "Home", null, new { @class = "" });
+    </div>
+  </div>
+</body>
+</html>
