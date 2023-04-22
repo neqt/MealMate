@@ -1,5 +1,5 @@
 html {
-  font-size: 14px;
+  font-size: 24px;
 }
 
 @media (min-width: 768px) {
@@ -7,7 +7,6 @@ html {
     font-size: 16px;
   }
 }
-/* testest */
 
 /* nav bar */
 
@@ -55,4 +54,26 @@ html {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+}
+
+#profileIMG {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 50%;
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+.profile {
+  justify-items: center;
+}
+
+#editInfo {
+  float: right;
+}
+
+.Info {
+  align-items: center;
 }
