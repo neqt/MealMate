@@ -2,12 +2,17 @@ using System.ComponentModel.DataAnnotations;
 
 namespace MealMate.Models
 {
-    public class User
-    {
-        [Key]
-        public int Id { get; set; }
-        public string Username { get; set; }
-        public string Password { get; set; }
-        public int PhoneNumber { get; set; }
-    }
+  public class User
+  {
+    [Key]
+    public int user_id { get; set; }
+    public string user_name { get; set; }
+    public string user_password { get; set; }
+    public string user_telephone { get; set; }
+    public string? user_img { get; set; }
+    public string? user_created_date { get; set; }
+    public string? user_created_by { get; set; }
+    public string? user_updated_date { get; set; }
+    public string? user_updated_by { get; set; }
+  }
 }
