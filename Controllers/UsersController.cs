@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using MealMate.Context;
-using MealMate.Models;
+using mealmate.Context;
+using mealmate.Models;
 
-namespace MealMate.Controllers
+namespace mealmate.Controllers
 {
   public class UsersController : Controller
   {

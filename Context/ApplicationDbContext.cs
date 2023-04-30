@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using MealMate.Models;
+using mealmate.Models;
 using System;
 
-namespace MealMate.Context
+namespace mealmate.Context
 {
   public class ApplicationDbContext : DbContext
   {

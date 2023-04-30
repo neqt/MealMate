@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace MealMate.Models
+namespace mealmate.Models
 {
   public class User
   {

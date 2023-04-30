@@ -1,0 +1,52 @@
+<!ELEMENT Project (PropertyGroup,ItemGroup+,Target+)>
+<!ATTLIST Project Sdk NMTOKEN #REQUIRED>
+<!ELEMENT PropertyGroup (TargetFramework,Nullable,TypeScriptCompileBlocked,TypeScriptToolsVersion,IsPackable,SpaRoot,DefaultItemExcludes,SpaProxyServerUrl,SpaProxyLaunchCommand,RootNamespace,ImplicitUsings)>
+<!ELEMENT TargetFramework (#PCDATA)>
+<!ELEMENT Nullable (#PCDATA)>
+<!ELEMENT TypeScriptCompileBlocked (#PCDATA)>
+<!ELEMENT TypeScriptToolsVersion (#PCDATA)>
+<!ELEMENT IsPackable (#PCDATA)>
+<!ELEMENT SpaRoot (#PCDATA)>
+<!ELEMENT DefaultItemExcludes (#PCDATA)>
+<!ELEMENT SpaProxyServerUrl (#PCDATA)>
+<!ELEMENT SpaProxyLaunchCommand (#PCDATA)>
+<!ELEMENT RootNamespace (#PCDATA)>
+<!ELEMENT ImplicitUsings (#PCDATA)>
+<!ELEMENT ItemGroup (PackageReference*,Content?,None*,DistFiles?,ResolvedFileToPublish?)>
+<!ELEMENT PackageReference (IncludeAssets?,PrivateAssets?)>
+<!ATTLIST PackageReference Include NMTOKEN #REQUIRED>
+<!ATTLIST PackageReference Version NMTOKEN #REQUIRED>
+<!ELEMENT IncludeAssets (#PCDATA)>
+<!ELEMENT PrivateAssets (#PCDATA)>
+<!ELEMENT Content EMPTY>
+<!ATTLIST Content Remove CDATA #REQUIRED>
+<!ELEMENT None EMPTY>
+<!ATTLIST None Remove CDATA #IMPLIED>
+<!ATTLIST None Include CDATA #IMPLIED>
+<!ATTLIST None Exclude CDATA #IMPLIED>
+<!ELEMENT Target (Exec+,Error?,Message?,ItemGroup?)>
+<!ATTLIST Target Name NMTOKEN #REQUIRED>
+<!ATTLIST Target BeforeTargets NMTOKEN #IMPLIED>
+<!ATTLIST Target Condition CDATA #IMPLIED>
+<!ATTLIST Target AfterTargets NMTOKEN #IMPLIED>
+<!ELEMENT Exec (Output?)>
+<!ATTLIST Exec Command CDATA #REQUIRED>
+<!ATTLIST Exec ContinueOnError NMTOKEN #IMPLIED>
+<!ATTLIST Exec WorkingDirectory CDATA #IMPLIED>
+<!ELEMENT Output EMPTY>
+<!ATTLIST Output TaskParameter NMTOKEN #REQUIRED>
+<!ATTLIST Output PropertyName NMTOKEN #REQUIRED>
+<!ELEMENT Error EMPTY>
+<!ATTLIST Error Condition CDATA #REQUIRED>
+<!ATTLIST Error Text CDATA #REQUIRED>
+<!ELEMENT Message EMPTY>
+<!ATTLIST Message Importance NMTOKEN #REQUIRED>
+<!ATTLIST Message Text CDATA #REQUIRED>
+<!ELEMENT DistFiles EMPTY>
+<!ATTLIST DistFiles Include CDATA #REQUIRED>
+<!ELEMENT ResolvedFileToPublish (RelativePath,CopyToPublishDirectory,ExcludeFromSingleFile)>
+<!ATTLIST ResolvedFileToPublish Include CDATA #REQUIRED>
+<!ATTLIST ResolvedFileToPublish Exclude CDATA #REQUIRED>
+<!ELEMENT RelativePath (#PCDATA)>
+<!ELEMENT CopyToPublishDirectory (#PCDATA)>
+<!ELEMENT ExcludeFromSingleFile (#PCDATA)>

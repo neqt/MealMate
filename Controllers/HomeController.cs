@@ -1,8 +1,8 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using MealMate.Models;
+using mealmate.Models;
 
-namespace MealMate.Controllers;
+namespace mealmate.Controllers;
 
 public class HomeController : Controller
 {
