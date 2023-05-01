@@ -6,11 +6,11 @@ import { NavItem, NavLink } from 'reactstrap';
 import './Status.css';
 import './Home.css';
 
-import StatusRubSue from './StatusRubSue';
-import StatusDataRubSue from './StatusDataRubSue';
+import StatusFak from './StatusFakSue';
+import StatusDatafak from './StatusDataFakSue';
 
-import StatusFakSue from './StatusFakSue';
-import StatusDataFakSue from './StatusDataFakSue';
+import StatusRub from './StatusRubSue';
+import StatusDataRub from './StatusDataRubSue';
 
 export class Status extends Component {
   static displayName = Status.name;
@@ -109,7 +109,7 @@ export class Status extends Component {
                 <div class="p-2 mt-5">
                   {' '}
                   <h2>
-                    <b>รายการรับฝาก</b>
+                    <b>รายการของฉัน</b>
                   </h2>{' '}
                 </div>
                 <div class="p-2 mb-5">
@@ -118,8 +118,8 @@ export class Status extends Component {
                   <label for="d">
                     <div
                       class="can-toggle__switch"
-                      data-checked="รับฝาก"
-                      data-unchecked="รอรับ"
+                      data-checked="สั่งซื้อ"
+                      data-unchecked="ฝากซื้อ"
                     ></div>
                   </label>
                 </div>
@@ -131,7 +131,7 @@ export class Status extends Component {
                 id="toggleContentRub"
               >
                 <div class="col-12 px-4 py-4 h3">
-                  <b>รอรับ</b>
+                  <b>ฝากซื้อ</b>
                 </div>
                 <div
                   style={{ backgroundColor: '#F7F7F7' }}
@@ -153,13 +153,15 @@ export class Status extends Component {
                 </div>
 
                 <div id="Sub2" class="row text-left py-4 h6 m-auto bg-white">
-                  {StatusDataRubSue.map((data) => (
-                    <StatusRubSue
+                  {StatusDatafak.map((data) => (
+                    <StatusFak
                       key={data.id}
                       Status={data.Status}
                       By={data.By}
                       Menu={data.Menu}
                       Detail={data.Detail}
+                      Tel={data.Tel}
+                      Color={data.Color}
                     />
                   ))}
                 </div>
@@ -171,7 +173,7 @@ export class Status extends Component {
                 id="toggleContentFak"
               >
                 <div class="col-12 px-4 py-4 h3">
-                  <b>รับฝาก</b>
+                  <b>สั่งซื้อ</b>
                 </div>
                 <div
                   style={{ backgroundColor: '#F7F7F7' }}
@@ -193,14 +195,15 @@ export class Status extends Component {
                 </div>
 
                 <div id="Sub" class="row text-left py-4 h6 m-auto bg-white">
-                  {StatusDataFakSue.map((data) => (
-                    <StatusFakSue
+                  {StatusDataRub.map((data) => (
+                    <StatusRub
                       key={data.id}
                       Status={data.Status}
                       By={data.By}
                       Menu={data.Menu}
                       Detail={data.Detail}
                       Color={data.Color}
+                      Tel={data.Tel}
                     />
                   ))}
                 </div>

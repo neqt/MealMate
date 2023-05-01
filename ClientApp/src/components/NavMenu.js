@@ -41,14 +41,34 @@ export class NavMenu extends Component {
               src="https://sv1.picz.in.th/images/2023/04/08/mlIkAa.png"
               alt="logo.png"
               border="0"
-              Link="/Home"
               width="100px"
             />
           </NavbarBrand>
-          <button type="button" style={{ margin: 0 }} class="icon-button">
-            <span class="material-icons">notifications</span>
-            <span class="icon-button__badge">2</span>
-          </button>
+
+          <Navbar className="ml-auto">
+            <NavItem>
+              <button type="button" className="icon-button">
+                <span className="material-icons">notifications</span>
+                <span className="icon-button__badge">2</span>
+              </button>
+            </NavItem>
+
+            <NavItem>
+              <NavbarBrand tag={Link} to="/login">
+                <button
+                  tag={Link}
+                  to="/login"
+                  style={{
+                    marginLeft: '30px',
+                    border: 'none',
+                    backgroundColor: 'transparent',
+                  }}
+                >
+                  <i className="fas fa-sign-out-alt"></i> Logout
+                </button>
+              </NavbarBrand>
+            </NavItem>
+          </Navbar>
         </Navbar>
       </header>
     );

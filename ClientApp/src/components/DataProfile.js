@@ -1,4 +1,3 @@
-// cardData.js
 const DataProfile = [
   {
     id: 1,

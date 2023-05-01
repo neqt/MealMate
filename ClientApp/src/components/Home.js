@@ -17,8 +17,20 @@ import DataFakSue from './DataFakSue';
 export class Home extends Component {
   static displayName = Home.name;
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      users: []
+    };
+  }
+
   componentDidMount() {
     document.body.classList.add('HOME');
+    fetch('/api/users')
+      .then((response) => response.json())
+      .then((data) => {
+        this.setState({ users: data });
+      });
   }
   componentWillUnmount() {
     document.body.className = '';
