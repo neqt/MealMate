@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import { NavItem, NavLink } from 'reactstrap';
 import './Home.css';
 import { Link } from 'react-router-dom';
@@ -13,25 +13,48 @@ import DataRubSue from './DataRubSue';
 
 import FakSue from './FakSue';
 import DataFakSue from './DataFakSue';
+import axios from 'axios';
 
+function App() {
+  const [users, setUser, setUpdatedProfile] = useState([]);
+
+  useEffect(async () => {
+    // axios.get('https://localhost:44436/api/users').then((data) => {
+    //   console.log(data);
+    //   setUser(data.data?.results);
+    //   debugger;
+    // });
+    try {
+      const res = await axios({
+          url: 'https://localhost:44436/api/users',
+          method: 'GET',
+          headers: {
+          },
+      })
+      setUser(res.data)
+      setUpdatedProfile(res.data)
+  } catch (error) {
+      console.log(error)
+  }
+  }, []);
+}
 export class Home extends Component {
   static displayName = Home.name;
 
   constructor(props) {
     super(props);
-    this.state = {
-      users: []
-    };
+    this.state = { users: [] };
   }
 
   componentDidMount() {
     document.body.classList.add('HOME');
-    fetch('/api/users')
-      .then((response) => response.json())
-      .then((data) => {
-        this.setState({ users: data });
-      });
+    // fetch('/api/users')
+    //   .then((response) => response.json())
+    //   .then((data) => {
+    //     this.setState({ users: data });
+    //   });
   }
+
   componentWillUnmount() {
     document.body.className = '';
   }

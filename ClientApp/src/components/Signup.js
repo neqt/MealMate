@@ -44,3 +44,77 @@ componentWillUnmount() {
     );
   }
 }
+
+
+
+// import React, { useState } from "react";
+// import axios from "axios";
+
+// export function SignUp() {
+//   const [user, setUser] = useState({
+//     user_name: "",
+//     user_password: "",
+//     user_telephone: "",
+//   });
+
+//   function handleChange(event) {
+//     const { name, value } = event.target;
+//     setUser((prevUser) => ({
+//       ...prevUser,
+//       [name]: value,
+//     }));
+//   }
+
+//   function handleSubmit(event) {
+//     event.preventDefault();
+//     axios.post("/User/regis", user).then((response) => {
+//       console.log(response);
+//       // do something after submitting the form
+//     });
+//   }
+
+//   return (
+//     <div className="row">
+//       <div className="col-md-4">
+//         <form onSubmit={handleSubmit}>
+//           <div className="form-group">
+//             <label htmlFor="user_name">User Name</label>
+//             <input
+//               type="text"
+//               className="form-control"
+//               id="user_name"
+//               name="user_name"
+//               value={user.user_name}
+//               onChange={handleChange}
+//             />
+//           </div>
+//           <div className="form-group">
+//             <label htmlFor="user_password">User Password</label>
+//             <input
+//               type="password"
+//               className="form-control"
+//               id="user_password"
+//               name="user_password"
+//               value={user.user_password}
+//               onChange={handleChange}
+//             />
+//           </div>
+//           <div className="form-group">
+//             <label htmlFor="user_telephone">User Telephone</label>
+//             <input
+//               type="text"
+//               className="form-control"
+//               id="user_telephone"
+//               name="user_telephone"
+//               value={user.user_telephone}
+//               onChange={handleChange}
+//             />
+//           </div>
+//           <button type="submit" className="btn btn-primary">
+//             Create
+//           </button>
+//         </form>
+//       </div>
+//     </div>
+//   );
+// }
