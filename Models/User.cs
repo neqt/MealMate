@@ -12,9 +12,7 @@ namespace mealmate.Models
     public string user_password { get; set; }
     public string user_telephone { get; set; }
     public string? user_img { get; set; }
-    public string? user_created_date { get; set; }
-    public string? user_created_by { get; set; }
-    public string? user_updated_date { get; set; }
-    public string? user_updated_by { get; set; }
+    public DateTime? user_created_date { get; set; }
+    public DateTime? user_updated_date { get; set; }
   }
 }

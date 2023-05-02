@@ -85,7 +85,7 @@ namespace mealmate.Controllers
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         [Route("create")]
-        public async Task<ActionResult<User>> CreateNewUser([Bind("user_name,user_password,user_telephone,user_img,user_created_date,user_created_by,user_updated_date,user_updated_by")] User user)
+        public async Task<ActionResult<User>> CreateNewUser([Bind("user_name,user_password,user_telephone,user_img,user_created_date,user_updated_date")] User user)
         {
         //   if (_context.Users == null)
         //   {
