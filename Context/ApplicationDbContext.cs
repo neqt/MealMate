@@ -11,5 +11,7 @@ namespace mealmate.Context
     public DbSet<User> Users { get; set; }
 
     public DbSet<UserLogin> UserLogins { get; set; }
+
+    public DbSet<Post> Posts { get; set; }
   }
 }
