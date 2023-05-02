@@ -34,7 +34,7 @@ namespace mealmate.Controllers
 
         // GET: api/Post/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Post>> GetPost(int id)
+        public async Task<ActionResult<Post>> GetPostById(int id)
         {
           if (_context.Posts == null)   
           {
@@ -58,7 +58,7 @@ namespace mealmate.Controllers
                 return BadRequest();
             }
 
-            _context.Entry(user).State = EntityState.Modified;
+            _context.Entry(post).State = EntityState.Modified;
 
             try
             {
@@ -66,7 +66,7 @@ namespace mealmate.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!PostExists(post))
+                if (!PostExists(id))
                 {
                     return NotFound();
                 }
@@ -78,24 +78,18 @@ namespace mealmate.Controllers
 
             return NoContent();
         }
-        
+
         [HttpPost]
-        public async Task<ActionResult<Post>> PostUser([Bind("poster_id,quantity,start_date,end_date,status")] Post post)
+        public async Task<ActionResult<Post>> PostPost([Bind("poster_id,quantity,start_date,end_date,status")] Post post)
         {
-            try
+            if (_context.Posts == null)
             {
-                if (ModelState.IsValid)
-                {
-                    _context.Add(post);
-                    await _context.SaveChangesAsync();
-                    return RedirectToAction(nameof(Index));
-                }
+                return Problem("Entity set 'ApplicationDbContext.Posts'  is null.");
             }
-            catch (Exception ex)
-            {
-                ModelState.AddModelError("", $"Unable to create record: {ex.Message}");
-            }
-            return View(user);
+            _context.Posts.Add(post);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction(nameof(GetPostById), new { id = post.post_id }, post);
         }
 
         private bool PostExists(int id)

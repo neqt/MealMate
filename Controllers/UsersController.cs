@@ -2,8 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using mealmate.Context;
 using mealmate.Models;
@@ -34,7 +34,7 @@ namespace mealmate.Controllers
 
         // GET: api/Users/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<User>> GetUser(int id)
+        public async Task<ActionResult<User>> GetUserById(int id)
         {
           if (_context.Users == null)   
           {
@@ -52,39 +52,40 @@ namespace mealmate.Controllers
 
         // PUT: api/Users/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutUser(int id, User user)
-        {
-            if (id != user.user_id)
-            {
-                return BadRequest();
-            }
+        // [HttpPut("{id}")]
+        // public async Task<IActionResult> PutUser(int id, User user)
+        // {
+        //     if (id != user.user_id)
+        //     {
+        //         return BadRequest();
+        //     }
 
-            _context.Entry(user).State = EntityState.Modified;
+        //     _context.Entry(user).State = EntityState.Modified;
 
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!UserExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+        //     try
+        //     {
+        //         await _context.SaveChangesAsync();
+        //     }
+        //     catch (DbUpdateConcurrencyException)
+        //     {
+        //         if (!UserExists(id))
+        //         {
+        //             return NotFound();
+        //         }
+        //         else
+        //         {
+        //             throw;
+        //         }
+        //     }
 
-            return NoContent();
-        }
+        //     return NoContent();
+        // }
 
         // POST: api/Users
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<User>> PostUser([Bind("user_name,user_password,user_telephone,user_img,user_created_date,user_created_by,user_updated_date,user_updated_by")] User user)
+        [Route("create")]
+        public async Task<ActionResult<User>> CreateNewUser([Bind("user_name,user_password,user_telephone,user_img,user_created_date,user_created_by,user_updated_date,user_updated_by")] User user)
         {
         //   if (_context.Users == null)
         //   {
@@ -94,20 +95,16 @@ namespace mealmate.Controllers
         //     await _context.SaveChangesAsync();
 
         //     return CreatedAtAction("GetUser", new { id = user.user_id }, user);
-            try
+           if (ModelState.IsValid)
             {
-                if (ModelState.IsValid)
-                {
-                    _context.Add(user);
-                    await _context.SaveChangesAsync();
-                    return RedirectToAction(nameof(Index));
-                }
+                await _context.Users.AddAsync(user);
+                await _context.SaveChangesAsync();
+                return CreatedAtAction(nameof(GetUserById), new { id = user.user_id }, user);
             }
-            catch (Exception ex)
+            else
             {
-                ModelState.AddModelError("", $"Unable to create record: {ex.Message}");
+                return BadRequest(ModelState);
             }
-            return View(user);
         }
 
         // DELETE: api/Users/5
