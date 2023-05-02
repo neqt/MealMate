@@ -1,6 +1,7 @@
 import { Counter } from './components/Counter';
 import { FetchData } from './components/FetchData';
-import { Home } from './components/Home';
+// import { Home } from './components/Home';
+import Home from './components/Home';
 import { Login } from './components/Login';
 import { Status } from './components/Status';
 import { SignUp } from './components/Signup';

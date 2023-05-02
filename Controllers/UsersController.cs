@@ -36,7 +36,7 @@ namespace mealmate.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<User>> GetUser(int id)
         {
-          if (_context.Users == null)
+          if (_context.Users == null)   
           {
               return NotFound();
           }
