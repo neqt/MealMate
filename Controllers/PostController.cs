@@ -76,20 +76,51 @@ namespace mealmate.Controllers
                 }
             }
 
+            return Ok();
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeletePost(int id)
+        {
+            if (_context.Posts == null)
+            {
+                return NotFound();
+            }
+            var post = await _context.Posts.FindAsync(id);
+            if (post == null)
+            {
+                return NotFound();
+            }
+
+            _context.Posts.Remove(post);
+            await _context.SaveChangesAsync();
+
             return NoContent();
         }
 
         [HttpPost]
-        public async Task<ActionResult<Post>> PostPost([Bind("poster_id,quantity,start_date,end_date,status")] Post post)
+        [Route("create")]
+        public async Task<ActionResult<Post>> CreatePost([Bind("poster_id,quantity,status")] Post post)
         {
-            if (_context.Posts == null)
+            try
             {
-                return Problem("Entity set 'ApplicationDbContext.Posts'  is null.");
+                if (ModelState.IsValid)
+                {
+                    int maxPostId = _context.Posts.Any() ? _context.Posts.Max(p => p.post_id) : 0;
+                    post.post_id = maxPostId + 1;
+                    post.start_date = DateTime.UtcNow;
+                    post.quantity = 0;
+                    post.status = '1';// TODO integrate with status enum
+                    await _context.Posts.AddAsync(post);
+                    await _context.SaveChangesAsync();
+                    return CreatedAtAction(nameof(GetPostById), new { id = post.post_id }, post);
+                }
             }
-            _context.Posts.Add(post);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction(nameof(GetPostById), new { id = post.post_id }, post);
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", $"Unable to create record: {ex.Message}");
+            }
+            return NotFound();
         }
 
         private bool PostExists(int id)

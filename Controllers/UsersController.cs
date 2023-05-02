@@ -52,34 +52,34 @@ namespace mealmate.Controllers
 
         // PUT: api/Users/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        // [HttpPut("{id}")]
-        // public async Task<IActionResult> PutUser(int id, User user)
-        // {
-        //     if (id != user.user_id)
-        //     {
-        //         return BadRequest();
-        //     }
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutUser(int id, User user)
+        {
+            if (id != user.user_id)
+            {
+                return BadRequest();
+            }
 
-        //     _context.Entry(user).State = EntityState.Modified;
+            _context.Entry(user).State = EntityState.Modified;
 
-        //     try
-        //     {
-        //         await _context.SaveChangesAsync();
-        //     }
-        //     catch (DbUpdateConcurrencyException)
-        //     {
-        //         if (!UserExists(id))
-        //         {
-        //             return NotFound();
-        //         }
-        //         else
-        //         {
-        //             throw;
-        //         }
-        //     }
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!UserExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
 
-        //     return NoContent();
-        // }
+            return NoContent();
+        }
 
         // POST: api/Users
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
@@ -87,24 +87,24 @@ namespace mealmate.Controllers
         [Route("create")]
         public async Task<ActionResult<User>> CreateNewUser([Bind("user_name,user_password,user_telephone,user_img,user_created_date,user_updated_date")] User user)
         {
-        //   if (_context.Users == null)
-        //   {
-        //       return Problem("Entity set 'ApplicationDbContext.Users'  is null.");
-        //   }
-        //     _context.Users.Add(user);
-        //     await _context.SaveChangesAsync();
-
-        //     return CreatedAtAction("GetUser", new { id = user.user_id }, user);
-           if (ModelState.IsValid)
+            try
             {
-                await _context.Users.AddAsync(user);
-                await _context.SaveChangesAsync();
-                return CreatedAtAction(nameof(GetUserById), new { id = user.user_id }, user);
+                if (ModelState.IsValid)
+                {
+                    int maxUserId = _context.Posts.Any() ? _context.Posts.Max(p => p.post_id) : 0;
+                    user.user_id = maxUserId + 1;
+                    user.user_created_date = DateTime.UtcNow;
+                    user.user_updated_date = DateTime.UtcNow;
+                    await _context.Users.AddAsync(user);
+                    await _context.SaveChangesAsync();
+                    return CreatedAtAction(nameof(GetUserById), new { id = user.user_id }, user);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                return BadRequest(ModelState);
+                ModelState.AddModelError("", $"Unable to create record: {ex.Message}");
             }
+            return NotFound();
         }
 
         // DELETE: api/Users/5
